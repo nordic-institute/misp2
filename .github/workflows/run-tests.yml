@@ -1,5 +1,5 @@
 name: MISP2 tests
-on: [push]
+on: [pull_request]
 jobs:
   run-test:
     runs-on: ubuntu-22.04

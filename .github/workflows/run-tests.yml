@@ -1,21 +1,22 @@
 name: MISP2 tests
-push:
-  branches:
-    - develop
-  paths:
-    - 'web-app/**'
-    - '.github/**'
-    - 'orbeon-war/**'
-    - 'packages/**'
-    - 'utils/**'
-pull_request:
-  types: [opened, synchronize, reopened]
-  paths:
-    - 'web-app/**'
-    - '.github/**'
-    - 'orbeon-war/**'
-    - 'packages/**'
-    - 'utils/**'
+on:
+  push:
+    branches:
+      - develop
+    paths:
+      - 'web-app/**'
+      - '.github/**'
+      - 'orbeon-war/**'
+      - 'packages/**'
+      - 'utils/**'
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - 'web-app/**'
+      - '.github/**'
+      - 'orbeon-war/**'
+      - 'packages/**'
+      - 'utils/**'
 jobs:
   run-test:
     runs-on: ubuntu-22.04

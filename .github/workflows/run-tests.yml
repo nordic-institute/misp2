@@ -62,7 +62,9 @@ jobs:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
       # Bit of a hacky solution so that the CLI would run (exits with code 1 if build.gradle is found)
       - name: Remove build.gradle so that we can use the CLI
-        run: rm web-app/build.gradle
+        run: |
+          rm -f build.gradle
+          rm -f web-app/build.gradle
       # Running CLI because JAVA 8 is not supported by the plugin anymore
       - name: Sonar analysis
         uses: SonarSource/sonarcloud-github-action@master

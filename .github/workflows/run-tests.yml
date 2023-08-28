@@ -59,7 +59,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+          fetch-depth: 0
       # Bit of a hacky solution so that the CLI would run (exits with code 1 if build.gradle is found)
       - name: Remove build.gradle so that we can use the CLI
         run: |

@@ -73,7 +73,7 @@ jobs:
           cache-read-only: ${{ github.ref != 'refs/heads/develop' }}
           gradle-home-cache-cleanup: true
       - name: Run build
-        run: ./gradlew build
+        run: ./gradlew build -x test
       - name: Remove build.gradle so that we can use the CLI
         run: |
           rm -f build.gradle

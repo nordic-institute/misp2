@@ -1,10 +1,19 @@
 plugins {
   id 'java'
   id 'war'
+  id "org.sonarqube" version "4.2.1.3168"
 }
 
 repositories {
   mavenCentral()
+}
+
+sonar {
+  properties {
+    property "sonar.projectKey", "nordic-institute_misp2-test"
+    property "sonar.organization", "nordic-institute"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
 }
 
 dependencies {

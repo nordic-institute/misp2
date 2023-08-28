@@ -60,6 +60,7 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+          submodules: 'true'
       # Bit of a hacky solution so that the CLI would run (exits with code 1 if build.gradle is found)
       - name: Set up JDK 8
         uses: actions/setup-java@v3

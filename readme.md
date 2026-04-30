@@ -1,8 +1,9 @@
 # MISP2
 
 > [!IMPORTANT]
-> MISP2 is no longer supported by the Nordic Institute for Interoperability Solutions (NIIS) and the source code is
-> archived here for reference only. No further development or support will be provided and no new packages will be released.
+> MISP2 is no longer supported by the Nordic Institute for Interoperability Solutions (NIIS) as of December 19th 2025.
+> The source code is archived here for reference only. No further development or support will be provided and no new
+> packages will be released.
 
 [![Go to X-Road Community
 Slack](https://img.shields.io/badge/Go%20to%20Community%20Slack-grey.svg)](https://jointxroad.slack.com/)
